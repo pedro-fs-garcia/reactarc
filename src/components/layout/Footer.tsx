@@ -33,7 +33,7 @@ export default function Footer() {
                         <div className="flex space-x-4">
                             {socials.map((social) => (
                                 social.profile.length > 0 && (
-                                    <a href={social.profile} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-accent transition-colors">
+                                    <a href={social.profile} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-accent transition-colors" key={social.profile} >
                                         {social.icon}
                                     </a>
                                 )

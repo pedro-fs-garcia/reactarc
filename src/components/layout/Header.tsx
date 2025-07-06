@@ -22,8 +22,8 @@ export default function Header({navItems, logoUrl, children}:HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const themeOptions = [
-    { value: "light", label: "Claro", icon: <Sun className="text-yellow-400" size={16} /> },
-    { value: "dark", label: "Escuro", icon: <Moon className="text-blue-500" size={16} /> },
+    { value: "light", label: "Light", icon: <Sun className="text-yellow-400" size={16} /> },
+    { value: "dark", label: "Dark", icon: <Moon className="text-blue-500" size={16} /> },
     { value: "corporate", label: "Corporate", icon: <Building2 className="text-gray-700" size={16} /> },
     { value: "nature", label: "Nature", icon: <Leaf className="text-green-600" size={16} /> },
     { value: "sunset", label: "Sunset", icon: <Sunset className="text-orange-500" size={16} /> },

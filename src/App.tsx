@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <>
-        <Header navItems={navItems} logoUrl={''}></Header>
+        <Header navItems={navItems} logoUrl={'/reactforge-logo.svg'}></Header>
         <main className="main-container bg-background text-text">
           <MainRouter />
         </main>

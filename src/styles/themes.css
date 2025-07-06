@@ -1,69 +1,61 @@
-/* === SISTEMA DE TEMAS CSS REFINADO === */
-/* Aplicando teoria das cores, harmonia cromática e princípios de UX/UI */
+/* === COLOR THEMES SYSTEM === */
 
-/* === TEMA LIGHT - Minimalista e Elegante === */
+/* === LIGHT THEME === */
 :root {
-  /* === PALETA PRINCIPAL === */
-  /* Baseada em harmonia monocromática com azul safira e complementares estratégicos */
-  --color-primary: #1e40af;           /* Azul safira profundo */
-  --color-primary-50: #eff6ff;        /* Azul ultra claro */
-  --color-primary-100: #dbeafe;       /* Azul muito claro */
-  --color-primary-200: #bfdbfe;       /* Azul claro */
-  --color-primary-300: #93c5fd;       /* Azul médio claro */
-  --color-primary-400: #60a5fa;       /* Azul médio */
-  --color-primary-500: #3b82f6;       /* Azul base */
-  --color-primary-600: #2563eb;       /* Azul escuro */
-  --color-primary-700: #1d4ed8;       /* Azul muito escuro */
-  --color-primary-800: #1e40af;       /* Azul profundo */
-  --color-primary-900: #1e3a8a;       /* Azul ultra escuro */
+  /* === MAIN COLORS === */
+  --color-primary: #1e40af;    
+  --color-primary-50: #eff6ff; 
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
   
-  /* === PALETA SECUNDÁRIA === */
-  /* Tons neutros quentes para equilíbrio */
-  --color-secondary: #6366f1;         /* Índigo complementar */
-  --color-accent: #f59e0b;            /* Âmbar para destaque */
-  --color-accent-warm: #f97316;       /* Laranja para CTAs */
+  /* === SECONDARY COLORS === */
+  --color-secondary: #6366f1;  
+  --color-accent: #f59e0b;     
+  --color-accent-warm: #f97316;
   
   /* === BACKGROUNDS === */
-  /* Gradação sutil para profundidade visual */
   --color-background: #ffffff;
-  --color-background-50: #fafbfc;     /* Quase branco com toque azul */
-  --color-background-100: #f4f6f8;    /* Cinza azulado ultra claro */
-  --color-background-200: #e8ecf0;    /* Cinza azulado claro */
-  --color-background-300: #dde2e8;    /* Cinza azulado médio */
+  --color-background-50: #fafbfc; 
+  --color-background-100: #f4f6f8;
+  --color-background-200: #e8ecf0;
+  --color-background-300: #dde2e8;
   --color-card: #ffffff;
   --color-surface: #f8fafc;
   --color-surface-elevated: #ffffff;
   
-  /* === TEXTOS === */
-  /* Hierarquia visual clara com contraste otimizado */
-  --color-text-primary: #1a202c;      /* Texto principal - contraste 16:1 */
-  --color-text-secondary: #4a5568;    /* Texto secundário - contraste 8:1 */
-  --color-text-tertiary: #718096;     /* Texto terciário - contraste 4.5:1 */
-  --color-text-muted: #a0aec0;        /* Texto desfocado - contraste 3:1 */
-  --color-text-inverse: #ffffff;      /* Texto em backgrounds escuros */
-  --color-text-on-primary: #ffffff;   /* Texto sobre cor primária */
+  /* === TEXTS === */
+  --color-text-primary: #1a202c;   
+  --color-text-secondary: #4a5568; 
+  --color-text-tertiary: #718096;  
+  --color-text-muted: #a0aec0;     
+  --color-text-inverse: #ffffff;   
+  --color-text-on-primary: #ffffff;
   
-  /* === BORDAS === */
-  /* Sistema progressivo de bordas */
-  --color-border-subtle: #f1f5f9;     /* Bordas muito sutis */
-  --color-border-light: #e2e8f0;      /* Bordas padrão */
-  --color-border-medium: #cbd5e1;     /* Bordas com presença */
-  --color-border-strong: #94a3b8;     /* Bordas definidas */
-  --color-border-focus: var(--color-primary-500); /* Bordas de foco */
+  /* === BORDERS === */
+  --color-border-subtle: #f1f5f9;    
+  --color-border-light: #e2e8f0;     
+  --color-border-medium: #cbd5e1;    
+  --color-border-strong: #94a3b8;    
+  --color-border-focus: var(--color-primary-500);
   
-  /* === ESTADOS SEMÂNTICOS === */
-  /* Cores acessíveis e semanticamente corretas */
-  --color-success: #22c55e;           /* Verde esmeralda */
-  --color-success-bg: #f0fdf4;        /* Background success */
-  --color-warning: #f59e0b;           /* Âmbar */
-  --color-warning-bg: #fffbeb;        /* Background warning */
-  --color-error: #ef4444;             /* Vermelho coral */
-  --color-error-bg: #fef2f2;          /* Background error */
-  --color-info: #3b82f6;              /* Azul informativo */
-  --color-info-bg: #eff6ff;           /* Background info */
+  /* === SEMANTIC STATES === */
+  --color-success: #22c55e;      
+  --color-success-bg: #f0fdf4;   
+  --color-warning: #f59e0b;      
+  --color-warning-bg: #fffbeb;   
+  --color-error: #ef4444;        
+  --color-error-bg: #fef2f2;     
+  --color-info: #3b82f6;         
+  --color-info-bg: #eff6ff;      
   
-  /* === SOMBRAS REFINADAS === */
-  /* Sistema de elevação baseado em Material Design 3.0 */
+  /* === SHADOWS === */
   --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.03);
   --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.04);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.04);
@@ -72,7 +64,7 @@
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.2);
   --shadow-colored: 0 8px 25px -8px rgb(30 64 175 / 0.15);
   
-  /* === VARIÁVEIS DE ESPACAMENTO === */
+  /* === SPACING VARIABLES === */
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 12px;
@@ -80,9 +72,9 @@
   --border-radius-2xl: 24px;
 }
 
-/* === TEMA DARK - Sofisticado e Moderno === */
+/* === DARK THEME === */
 html[data-theme="dark"] {
-  /* === PALETA PRINCIPAL === */
+  /* === MAIN COLORS === */
   --color-primary: #60a5fa;
   --color-primary-50: #1e3a8a;
   --color-primary-100: #1e40af;
@@ -95,37 +87,37 @@ html[data-theme="dark"] {
   --color-primary-800: #dbeafe;
   --color-primary-900: #eff6ff;
   
-  /* === PALETA SECUNDÁRIA === */
+  /* === SECONDARY COLORS === */
   --color-secondary: #a5b4fc;
   --color-accent: #fbbf24;
   --color-accent-warm: #fb923c;
   
   /* === BACKGROUNDS === */
-  --color-background: #101122;        /* Fundo principal mais escuro */
-  --color-background-50: #18192b;     /* Cinza azulado ultra escuro */
-  --color-background-100: #23243a;    /* Cinza azulado muito escuro */
-  --color-background-200: #2d2e48;    /* Cinza azulado escuro */
-  --color-background-300: #393a56;    /* Cinza azulado médio escuro */
-  --color-card: #18192b;              /* Card mais escuro */
+  --color-background: #101122;   
+  --color-background-50: #18192b;
+  --color-background-100: #23243a;
+  --color-background-200: #2d2e48;
+  --color-background-300: #393a56;
+  --color-card: #18192b;         
   --color-surface: #23243a;
   --color-surface-elevated: #2d2e48;
   
-  /* === TEXTOS === */
-  --color-text-primary: #f4f8fb;      /* Branco quase puro para contraste máximo */
-  --color-text-secondary: #cbd5e1;    /* Cinza claro */
-  --color-text-tertiary: #94a3b8;     /* Cinza médio */
-  --color-text-muted: #64748b;        /* Cinza azulado */
-  --color-text-inverse: #18192b;      /* Para textos em backgrounds claros */
-  --color-text-on-primary: #ffffff;   /* Sempre branco sobre botões primários */
+  /* === TEXTS === */
+  --color-text-primary: #f4f8fb; 
+  --color-text-secondary: #cbd5e1;
+  --color-text-tertiary: #94a3b8;
+  --color-text-muted: #64748b;   
+  --color-text-inverse: #18192b; 
+  --color-text-on-primary: #ffffff;
   
-  /* === BORDAS === */
+  /* === BORDERS === */
   --color-border-subtle: #23243a;
   --color-border-light: #2d2e48;
   --color-border-medium: #3d3d6b;
   --color-border-strong: #4d4d7b;
   --color-border-focus: var(--color-primary-500);
   
-  /* === ESTADOS SEMÂNTICOS === */
+  /* === SEMANTIC STATES === */
   --color-success: #34d399;
   --color-success-bg: #064e3b;
   --color-warning: #fbbf24;
@@ -135,7 +127,7 @@ html[data-theme="dark"] {
   --color-info: #60a5fa;
   --color-info-bg: #1e3a8a;
   
-  /* === SOMBRAS === */
+  /* === SHADOWS === */
   --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.3);
   --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.2);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.2);
@@ -145,10 +137,9 @@ html[data-theme="dark"] {
   --shadow-colored: 0 8px 25px -8px rgb(96 165 250 / 0.3);
 }
 
-/* === TEMA CORPORATE - Elegante e Profissional === */
+/* === CORPORATE THEME === */
 html[data-theme="corporate"] {
-  /* === PALETA PRINCIPAL === */
-  /* Baseada em cinza grafite com toques de azul marinho */
+  /* === MAIN COLORS === */
   --color-primary: #1f2937;
   --color-primary-50: #f9fafb;
   --color-primary-100: #f3f4f6;
@@ -161,10 +152,10 @@ html[data-theme="corporate"] {
   --color-primary-800: #1f2937;
   --color-primary-900: #111827;
   
-  /* === PALETA SECUNDÁRIA === */
-  --color-secondary: #dc2626;          /* Vermelho corporativo */
-  --color-accent: #0891b2;             /* Azul corporativo */
-  --color-accent-warm: #b91c1c;        /* Vermelho para destaque */
+  /* === SECONDARY COLORS === */
+  --color-secondary: #dc2626;     
+  --color-accent: #0891b2;        
+  --color-accent-warm: #b91c1c;   
   
   /* === BACKGROUNDS === */
   --color-background: #ffffff;
@@ -176,7 +167,7 @@ html[data-theme="corporate"] {
   --color-surface: #fafafa;
   --color-surface-elevated: #ffffff;
   
-  /* === TEXTOS === */
+  /* === TEXTS === */
   --color-text-primary: #111827;
   --color-text-secondary: #374151;
   --color-text-tertiary: #6b7280;
@@ -184,14 +175,14 @@ html[data-theme="corporate"] {
   --color-text-inverse: #ffffff;
   --color-text-on-primary: #ffffff;
   
-  /* === BORDAS === */
+  /* === BORDERS === */
   --color-border-subtle: #f3f4f6;
   --color-border-light: #e5e7eb;
   --color-border-medium: #d1d5db;
   --color-border-strong: #9ca3af;
   --color-border-focus: var(--color-secondary);
   
-  /* === ESTADOS SEMÂNTICOS === */
+  /* === SEMANTIC STATES === */
   --color-success: #059669;
   --color-success-bg: #ecfdf5;
   --color-warning: #d97706;
@@ -201,15 +192,14 @@ html[data-theme="corporate"] {
   --color-info: #0891b2;
   --color-info-bg: #f0f9ff;
   
-  /* === SOMBRAS === */
+  /* === SHADOWS === */
   --shadow-colored: 0 8px 25px -8px rgb(31 41 55 / 0.15);
 }
 
-/* === TEMA NATURE - Orgânico e Harmonioso === */
+/* === NATURE THEME === */
 html[data-theme="nature"] {
-  /* === PALETA PRINCIPAL === */
-  /* Inspirada na harmonia da natureza - verde floresta e terra */
-  --color-primary: #16a34a;           /* Verde floresta */
+  /* === MAIN COLORS === */
+  --color-primary: #16a34a;      
   --color-primary-50: #f0fdf4;
   --color-primary-100: #dcfce7;
   --color-primary-200: #bbf7d0;
@@ -221,22 +211,22 @@ html[data-theme="nature"] {
   --color-primary-800: #166534;
   --color-primary-900: #14532d;
   
-  /* === PALETA SECUNDÁRIA === */
-  --color-secondary: #a3a3a3;          /* Cinza pedra */
-  --color-accent: #f59e0b;             /* Âmbar dourado */
-  --color-accent-warm: #ea580c;        /* Laranja terra */
+  /* === SECONDARY COLORS === */
+  --color-secondary: #a3a3a3;     
+  --color-accent: #f59e0b;        
+  --color-accent-warm: #ea580c;   
   
   /* === BACKGROUNDS === */
-  --color-background: #fefffe;         /* Branco natural */
-  --color-background-50: #f8fffe;      /* Verde claro quase imperceptível */
-  --color-background-100: #f0fdf4;     /* Verde muito claro */
-  --color-background-200: #dcfce7;     /* Verde claro */
-  --color-background-300: #bbf7d0;     /* Verde suave */
+  --color-background: #fefffe;    
+  --color-background-50: #f8fffe; 
+  --color-background-100: #f0fdf4;
+  --color-background-200: #dcfce7;
+  --color-background-300: #bbf7d0;
   --color-card: #ffffff;
   --color-surface: #f8fffe;
   --color-surface-elevated: #ffffff;
   
-  /* === TEXTOS === */
+  /* === TEXTS === */
   --color-text-primary: #14532d;
   --color-text-secondary: #166534;
   --color-text-tertiary: #15803d;
@@ -244,14 +234,14 @@ html[data-theme="nature"] {
   --color-text-inverse: #ffffff;
   --color-text-on-primary: #ffffff;
   
-  /* === BORDAS === */
+  /* === BORDERS === */
   --color-border-subtle: #f0fdf4;
   --color-border-light: #dcfce7;
   --color-border-medium: #bbf7d0;
   --color-border-strong: #86efac;
   --color-border-focus: var(--color-primary-600);
   
-  /* === ESTADOS SEMÂNTICOS === */
+  /* === SEMANTIC STATES === */
   --color-success: #22c55e;
   --color-success-bg: #f0fdf4;
   --color-warning: #eab308;
@@ -261,15 +251,14 @@ html[data-theme="nature"] {
   --color-info: #0ea5e9;
   --color-info-bg: #f0f9ff;
   
-  /* === SOMBRAS === */
+  /* === SHADOWS === */
   --shadow-colored: 0 8px 25px -8px rgb(22 163 74 / 0.2);
 }
 
-/* === TEMA SUNSET - Caloroso e Energético === */
+/* === SUNSET THEME === */
 html[data-theme="sunset"] {
-  /* === PALETA PRINCIPAL === */
-  /* Inspirada no pôr do sol - laranja, rosa e dourado */
-  --color-primary: #ea580c;           /* Laranja pôr do sol */
+  /* === MAIN COLORS === */
+  --color-primary: #ea580c;
   --color-primary-50: #fff7ed;
   --color-primary-100: #ffedd5;
   --color-primary-200: #fed7aa;
@@ -281,22 +270,22 @@ html[data-theme="sunset"] {
   --color-primary-800: #9a3412;
   --color-primary-900: #7c2d12;
   
-  /* === PALETA SECUNDÁRIA === */
-  --color-secondary: #ec4899;          /* Rosa sunset */
-  --color-accent: #fbbf24;             /* Dourado */
-  --color-accent-warm: #dc2626;        /* Vermelho intenso */
+  /* === SECONDARY COLORS === */
+  --color-secondary: #ec4899;  
+  --color-accent: #fbbf24;     
+  --color-accent-warm: #dc2626;
   
   /* === BACKGROUNDS === */
-  --color-background: #fffcf5;         /* Creme suave */
-  --color-background-50: #fffaf0;      /* Creme quase branco */
-  --color-background-100: #fff7ed;     /* Creme claro */
-  --color-background-200: #ffedd5;     /* Pêssego claro */
-  --color-background-300: #fed7aa;     /* Pêssego suave */
+  --color-background: #fffcf5;    
+  --color-background-50: #fffaf0; 
+  --color-background-100: #fff7ed;
+  --color-background-200: #ffedd5;
+  --color-background-300: #fed7aa;
   --color-card: #ffffff;
   --color-surface: #fffaf0;
   --color-surface-elevated: #ffffff;
   
-  /* === TEXTOS === */
+  /* === TEXTS === */
   --color-text-primary: #7c2d12;
   --color-text-secondary: #9a3412;
   --color-text-tertiary: #c2410c;
@@ -304,14 +293,14 @@ html[data-theme="sunset"] {
   --color-text-inverse: #ffffff;
   --color-text-on-primary: #ffffff;
   
-  /* === BORDAS === */
+  /* === BORDERS === */
   --color-border-subtle: #fff7ed;
   --color-border-light: #ffedd5;
   --color-border-medium: #fed7aa;
   --color-border-strong: #fdba74;
   --color-border-focus: var(--color-primary-600);
   
-  /* === ESTADOS SEMÂNTICOS === */
+  /* === SEMANTIC STATES === */
   --color-success: #16a34a;
   --color-success-bg: #f0fdf4;
   --color-warning: #f59e0b;
@@ -321,11 +310,9 @@ html[data-theme="sunset"] {
   --color-info: #0ea5e9;
   --color-info-bg: #f0f9ff;
   
-  /* === SOMBRAS === */
+  /* === SHADOWS === */
   --shadow-colored: 0 8px 25px -8px rgb(234 88 12 / 0.25);
 }
-
-/* === CLASSES UTILITÁRIAS COMPLETAS === */
 
 /* === BACKGROUNDS === */
 .bg-background { background-color: var(--color-background) !important; }
@@ -337,7 +324,7 @@ html[data-theme="sunset"] {
 .bg-surface { background-color: var(--color-surface) !important; }
 .bg-surface-elevated { background-color: var(--color-surface-elevated) !important; }
 
-/* Cores Primárias */
+/* Primary Colors */
 .bg-primary { background-color: var(--color-primary) !important; }
 .bg-primary-50 { background-color: var(--color-primary-50) !important; }
 .bg-primary-100 { background-color: var(--color-primary-100) !important; }
@@ -347,7 +334,7 @@ html[data-theme="sunset"] {
 .bg-secondary { background-color: var(--color-secondary) !important; }
 .bg-accent { background-color: var(--color-accent) !important; }
 
-/* === TEXTOS === */
+/* === TEXTS === */
 .text-primary { color: var(--color-text-primary) !important; }
 .text-secondary { color: var(--color-text-secondary) !important; }
 .text-tertiary { color: var(--color-text-tertiary) !important; }
@@ -355,12 +342,12 @@ html[data-theme="sunset"] {
 .text-inverse { color: var(--color-text-inverse) !important; }
 .text-on-primary { color: var(--color-text-on-primary) !important; }
 
-/* Cores de texto */
+/* text colors */
 .text-color-primary { color: var(--color-primary) !important; }
 .text-color-secondary { color: var(--color-secondary) !important; }
 .text-color-accent { color: var(--color-accent) !important; }
 
-/* === BORDAS === */
+/* === BORDERS === */
 .border-subtle { border-color: var(--color-border-subtle) !important; }
 .border-light { border-color: var(--color-border-light) !important; }
 .border-medium { border-color: var(--color-border-medium) !important; }
@@ -370,7 +357,7 @@ html[data-theme="sunset"] {
 .border-color-primary { border-color: var(--color-primary) !important; }
 .border-color-secondary { border-color: var(--color-secondary) !important; }
 
-/* === ESTADOS SEMÂNTICOS === */
+/* === STATES === */
 .bg-success { background-color: var(--color-success) !important; }
 .bg-success-light { background-color: var(--color-success-bg) !important; }
 .bg-warning { background-color: var(--color-warning) !important; }
@@ -394,7 +381,7 @@ html[data-theme="sunset"] {
 .border-error { border-color: var(--color-error) !important; }
 .border-info { border-color: var(--color-info) !important; }
 
-/* === SOMBRAS === */
+/* === SHADOWS === */
 .shadow-xs { box-shadow: var(--shadow-xs) !important; }
 .shadow-sm { box-shadow: var(--shadow-sm) !important; }
 .shadow-md { box-shadow: var(--shadow-md) !important; }
@@ -431,7 +418,7 @@ html[data-theme="sunset"] {
   box-shadow: 0 0 0 3px rgb(from var(--color-primary-500) r g b / 0.1) !important;
 }
 
-/* === TRANSIÇÕES OTIMIZADAS === */
+/* === TRANSITIONS === */
 .transition-colors {
   transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
               color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
@@ -446,7 +433,7 @@ html[data-theme="sunset"] {
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* === TRANSIÇÃO GLOBAL DE TEMA === */
+/* === GLOBAL THEME TRANSITION === */
 * {
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
               color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -454,7 +441,7 @@ html[data-theme="sunset"] {
               box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* === UTILITÁRIOS ESPECIAIS === */
+/* === UTILS === */
 .theme-transition {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -475,7 +462,7 @@ html[data-theme="sunset"] {
   background: linear-gradient(135deg, var(--color-accent), var(--color-accent-warm));
 }
 
-/* === COMPONENTES BASE === */
+/* === BASE COMPONENTS === */
 .card {
   background-color: var(--color-card);
   border: 1px solid var(--color-border-light);

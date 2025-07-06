@@ -1,80 +1,80 @@
-# Guia de Contribuição — Base React
+# Contribution Guide — React Base
 
-Obrigado por contribuir com este projeto! Siga estas orientações para garantir um fluxo de colaboração saudável, organizado e produtivo.
+Thank you for contributing to this project! Please follow these guidelines to ensure a healthy, organized, and productive collaboration flow.
 
 ---
 
-## 📦 Como contribuir
+## 📦 How to contribute
 
-1. **Fork este repositório** e crie sua branch a partir de `main`:
+1. **Fork this repository** and create your branch from `main`:
    ```bash
-   git checkout -b minha-feature
+   git checkout -b my-feature
    ```
-2. **Faça commits pequenos e descritivos**.
-3. **Abra um Pull Request** (PR) detalhando o que foi feito.
-4. Aguarde revisão e feedback.
+2. **Make small, descriptive commits**.
+3. **Open a Pull Request** (PR) detailing what was done.
+4. Wait for review and feedback.
 
 ---
 
-## 🧩 Padrão para Componentes
+## 🧩 Component Standards
 
-- **Localização:**
-  - Coloque novos componentes em `src/components/ui/` ou subpastas adequadas.
-- **Nomeação:**
-  - Use PascalCase para arquivos e componentes (`MeuComponente.tsx`).
+- **Location:**
+  - Place new components in `src/components/ui/` or appropriate subfolders.
+- **Naming:**
+  - Use PascalCase for files and components (`MyComponent.tsx`).
 - **Props:**
-  - Sempre tipar as props com TypeScript.
-  - Prefira `forwardRef` para componentes de input ou botões reutilizáveis.
-- **Estilo:**
-  - Use classes utilitárias do Tailwind e/ou classes de tema (`bg-card`, `text-primary`, etc).
-  - Prefira composição a herança.
-- **Acessibilidade:**
-  - Use `aria-label`, roles e navegação por teclado sempre que possível.
-- **Exemplo:**
-  - Inclua exemplos de uso no `UIComponentsShowcase` se for um componente visual.
+  - Always type props with TypeScript.
+  - Prefer `forwardRef` for input or reusable button components.
+- **Style:**
+  - Use Tailwind utility classes and/or theme classes (`bg-card`, `text-primary`, etc).
+  - Prefer composition over inheritance.
+- **Accessibility:**
+  - Use `aria-label`, roles, and keyboard navigation whenever possible.
+- **Example:**
+  - Include usage examples in `UIComponentsShowcase` if it's a visual component.
 
 ---
 
-## 🎨 Temas
+## 🎨 Themes
 
-- **Adicione variáveis de tema** em `src/themes.css`.
-- **Use as variáveis** nos componentes via classes utilitárias ou CSS custom properties.
-- **Evite hardcode de cores**. Sempre use as variáveis do tema.
+- **Add theme variables** in `src/themes.css`.
+- **Use the variables** in components via utility classes or CSS custom properties.
+- **Avoid hardcoding colors**. Always use theme variables.
 
 ---
 
 ## 📝 Commits
 
-- Use mensagens claras e no imperativo:
-  - `feat: adiciona componente Card`
-  - `fix: corrige bug no Dropdown`
-  - `docs: atualiza README`
+- Use clear, imperative messages:
+  - `feat: add Card component`
+  - `fix: fix bug in Dropdown`
+  - `docs: update README`
 
 ---
 
 ## 🐛 Issues
 
-- Descreva o problema, passos para reproduzir e comportamento esperado.
-- Se possível, anexe prints ou exemplos de código.
+- Describe the problem, steps to reproduce, and expected behavior.
+- If possible, attach screenshots or code examples.
 
 ---
 
 ## 🚀 Pull Requests
 
-- Descreva claramente o que foi feito e por quê.
-- Relacione a issue (se houver): `Closes #123`.
-- Marque como draft se ainda estiver trabalhando.
-- Aguarde revisão antes de mergear.
+- Clearly describe what was done and why.
+- Link the issue (if any): `Closes #123`.
+- Mark as draft if still working.
+- Wait for review before merging.
 
 ---
 
-## 💡 Boas práticas
+## 💡 Best Practices
 
-- Prefira componentes pequenos e reutilizáveis.
-- Sempre use o sistema de temas.
-- Teste responsividade e acessibilidade.
-- Documente props e exemplos quando possível.
+- Prefer small and reusable components.
+- Always use the theme system.
+- Test responsiveness and accessibility.
+- Document props and examples when possible.
 
 ---
 
-Obrigado por ajudar a tornar esta base React cada vez melhor! 🚀 
+Thank you for helping make this React base even better! 🚀

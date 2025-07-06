@@ -1,79 +1,79 @@
-# 🚀 Base React Moderna
+# 🚀 Modern React Boilerplate
 
-Uma base React robusta, escalável e pronta para acelerar o desenvolvimento de projetos modernos. Inclui sistema de temas, biblioteca de componentes UI reutilizáveis, responsividade, acessibilidade e integração com Tailwind CSS.
-
----
-
-## ✨ Principais Recursos
-
-- **Sistema de Temas**: 5 temas prontos e de fácil customização.
-- **Componentes UI**: Inputs, Dropdown, Modal, Alert, Badge, ProgressBar, Tooltip, Skeleton, Tabs, Card, Botões e mais.
-- **Acessibilidade**: Foco em contraste, navegação por teclado e ARIA.
-- **Responsividade**: Mobile-first, componentes adaptáveis.
-- **Animações**: Framer Motion integrado para microinterações suaves.
-- **Pronto para escalar**: Estrutura de pastas organizada, fácil de manter e expandir.
+A robust, scalable React boilerplate ready to accelerate modern project development. Includes a theme system, reusable UI component library, responsiveness, accessibility, and Tailwind CSS integration.
 
 ---
 
-## 🎨 Sistema de Temas
+## ✨ Main Features
 
-A base já vem com 5 temas prontos:
+- **Theme System**: 5 ready-to-use and easily customizable themes.
+- **UI Components**: Inputs, Dropdown, Modal, Alert, Badge, ProgressBar, Tooltip, Skeleton, Tabs, Card, Buttons, and more.
+- **Accessibility**: Focus on contrast, keyboard navigation, and ARIA.
+- **Responsiveness**: Mobile-first, adaptable components.
+- **Animations**: Framer Motion integrated for smooth micro-interactions.
+- **Ready to scale**: Organized folder structure, easy to maintain and expand.
 
-- **Light**: Minimalista e elegante
-- **Dark**: Sofisticado e moderno
-- **Corporate**: Profissional e sóbrio
-- **Nature**: Orgânico e natural
-- **Sunset**: Vibrante e criativo
+---
 
-### Como usar um tema
+## 🎨 Theme System
 
-Adicione o atributo `data-theme` ao elemento `<html>`:
+The boilerplate comes with 5 ready themes:
+
+- **Light**: Minimalist and elegant
+- **Dark**: Sophisticated and modern
+- **Corporate**: Professional and sober
+- **Nature**: Organic and natural
+- **Sunset**: Vibrant and creative
+
+### How to use a theme
+
+Add the `data-theme` attribute to the `<html>` element:
 
 ```html
 <html data-theme="dark">
 ```
 
-Ou altere dinamicamente via JS:
+Or change dynamically via JS:
 
 ```js
 document.documentElement.setAttribute('data-theme', 'corporate');
 ```
 
-### Paleta de Cores
-Cada tema define variáveis como:
+### Color Palette
+Each theme defines variables like:
 - `--color-primary`, `--color-secondary`, `--color-accent`
 - `--color-background`, `--color-card`, `--color-surface`
 - `--color-text-primary`, `--color-text-secondary`, `--color-text-muted`
 - `--color-success`, `--color-warning`, `--color-error`, `--color-info`
 - `--shadow-xs`, `--shadow-md`, etc.
 
-### Utilitários Globais
+### Global Utilities
 - `.bg-background`, `.bg-card`, `.bg-primary`, etc.
 - `.text-primary`, `.text-secondary`, `.text-error`, etc.
 - `.border-light`, `.border-focus`, `.border-error`, etc.
-- `.input-base`, `.input-field`, `.focus-ring` para inputs
-- `.button-primary` para botões principais
+- `.input-base`, `.input-field`, `.focus-ring` for inputs
+- `.button-primary` for main buttons
 
 ---
 
-## 🧩 Componentes Disponíveis
+## 🧩 Available Components
 
-Todos os componentes são **acessíveis**, **responsivos** e utilizam o sistema de temas.
+All components are **accessible**, **responsive**, and use the theme system.
 
-### Botões
+### Buttons
 
 #### `BaseButton`
-Componente base para todos os botões do projeto. Suporta variantes, tamanhos, loading, ícones, largura total e acessibilidade.
+Base component for all project buttons. Supports variants, sizes, loading, icons, full width, and accessibility.
 
-**Props principais:**
-- `variant`: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' (padrão: 'primary')
-- `size`: 'sm' | 'md' | 'lg' (padrão: 'md')
-- `loading`: boolean (exibe spinner)
-- `leftIcon`/`rightIcon`: ReactNode (ícones à esquerda/direita)
-- `fullWidth`: boolean (ocupa 100% da largura)
-- `rounded`: boolean (borda arredondada total)
+**Main props:**
+- `variant`: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' (default: 'primary')
+- `size`: 'sm' | 'md' | 'lg' (default: 'md')
+- `loading`: boolean (shows spinner)
+- `leftIcon`/`rightIcon`: ReactNode (icons left/right)
+- `fullWidth`: boolean (100% width)
+- `rounded`: boolean (fully rounded border)
 
-**Exemplo:**
+**Example:**
 ```tsx
 import { BaseButton } from '@/components/ui/buttons/BaseButton';
 
@@ -85,73 +85,73 @@ import { BaseButton } from '@/components/ui/buttons/BaseButton';
   loading={false}
   fullWidth
 >
-  Salvar
+  Save
 </BaseButton>
 ```
 
-#### `CtaButton` e `WhatsappButton`
-Botões de ação com animação e integração com WhatsApp, baseados no `BaseButton`.
+#### `CtaButton` and `WhatsappButton`
+Action buttons with animation and WhatsApp integration, based on `BaseButton`.
 
 ---
 
 ### Inputs
 
 #### `BasicInput`
-Campo de input padrão, com suporte a label, ícones, erro, descrição e tamanhos.
+Standard input field, supports label, icons, error, description, and sizes.
 
 ```tsx
 <BasicInput
-  label="Nome"
-  placeholder="Digite seu nome"
+  label="Name"
+  placeholder="Enter your name"
   leftIcon={<User size={16} />}
-  error="Campo obrigatório"
+  error="Required field"
   size="md"
 />
 ```
 
 #### `AutoCompleteInput`
-Input com sugestões dinâmicas, ícones, loading e navegação por teclado.
+Input with dynamic suggestions, icons, loading, and keyboard navigation.
 
 ```tsx
 <AutoCompleteInput
-  label="Cidade"
-  placeholder="Digite uma cidade"
+  label="City"
+  placeholder="Enter a city"
   suggestions={[
     { id: 1, label: 'São Paulo', icon: <MapPin size={16} /> },
     { id: 2, label: 'Rio de Janeiro', icon: <MapPin size={16} /> }
   ]}
-  value={cidade}
-  onSelect={setCidade}
+  value={city}
+  onSelect={setCity}
 />
 ```
 
 #### `Dropdown`
-Select customizável, com suporte a ícones e estados.
+Customizable select, supports icons and states.
 
 ```tsx
 <Dropdown
   options={[
-    { value: '1', label: 'Opção 1', icon: <User size={16} /> },
-    { value: '2', label: 'Opção 2' }
+    { value: '1', label: 'Option 1', icon: <User size={16} /> },
+    { value: '2', label: 'Option 2' }
   ]}
-  value={valor}
-  onChange={setValor}
+  value={value}
+  onChange={setValue}
 />
 ```
 
 #### `Checkbox`
-Checkbox estilizado, com label, descrição e animação.
+Styled checkbox, with label, description, and animation.
 
 ```tsx
 <Checkbox
   checked={checked}
   onChange={setChecked}
-  label="Aceito os termos"
+  label="I accept the terms"
 />
 ```
 
 #### `Radio`
-Grupo de radio buttons com descrição.
+Radio button group with description.
 
 ```tsx
 <Radio
@@ -159,71 +159,71 @@ Grupo de radio buttons com descrição.
     { value: 'a', label: 'A' },
     { value: 'b', label: 'B' }
   ]}
-  value={valor}
-  onChange={setValor}
-  name="grupo"
-  label="Escolha uma opção"
+  value={value}
+  onChange={setValue}
+  name="group"
+  label="Choose an option"
 />
 ```
 
 #### `Toggle`
-Switch animado para on/off.
+Animated switch for on/off.
 
 ```tsx
 <Toggle
-  checked={ativo}
-  onChange={setAtivo}
-  label="Ativo?"
+  checked={active}
+  onChange={setActive}
+  label="Active?"
 />
 ```
 
 ---
 
-### UI e Feedback
+### UI and Feedback
 
 #### `Modal`
-Modal reutilizável com animação, backdrop e tamanhos.
+Reusable modal with animation, backdrop, and sizes.
 
 ```tsx
-<Modal isOpen={open} onClose={() => setOpen(false)} title="Título">
-  Conteúdo do modal
+<Modal isOpen={open} onClose={() => setOpen(false)} title="Title">
+  Modal content
 </Modal>
 ```
 
 #### `ProgressBar`
-Barra de progresso animada, com variantes de cor.
+Animated progress bar, with color variants.
 
 ```tsx
-<ProgressBar value={60} label="Progresso" showPercentage variant="success" />
+<ProgressBar value={60} label="Progress" showPercentage variant="success" />
 ```
 
 #### `Badge`
-Selo de destaque, com variantes e opção removível.
+Highlight badge, with variants and removable option.
 
 ```tsx
-<Badge variant="primary" removable onRemove={() => {}}>Texto</Badge>
+<Badge variant="primary" removable onRemove={() => {}}>Text</Badge>
 ```
 
 #### `Alert`
-Alerta de feedback, com tipos (success, warning, error, info).
+Feedback alert, with types (success, warning, error, info).
 
 ```tsx
-<Alert type="success" title="Sucesso!" closable>
-  Operação realizada com sucesso.
+<Alert type="success" title="Success!" closable>
+  Operation completed successfully.
 </Alert>
 ```
 
 #### `Tooltip`
-Tooltip com animação e posicionamento.
+Tooltip with animation and positioning.
 
 ```tsx
-<Tooltip content="Dica!">
+<Tooltip content="Tip!">
   <button>Hover me</button>
 </Tooltip>
 ```
 
 #### `Skeleton`
-Placeholder animado para loading.
+Animated placeholder for loading.
 
 ```tsx
 <Skeleton variant="text" width="100%" />
@@ -232,50 +232,50 @@ Placeholder animado para loading.
 
 ---
 
-### Outros
+### Others
 
 #### `Tabs`
-Sistema de abas com Radix UI.
+Tab system with Radix UI.
 
 ```tsx
 <Tabs defaultValue="tab1">
   <TabsList>
-    <TabsTrigger value="tab1">Aba 1</TabsTrigger>
-    <TabsTrigger value="tab2">Aba 2</TabsTrigger>
+    <TabsTrigger value="tab1">Tab 1</TabsTrigger>
+    <TabsTrigger value="tab2">Tab 2</TabsTrigger>
   </TabsList>
-  <TabsContent value="tab1">Conteúdo 1</TabsContent>
-  <TabsContent value="tab2">Conteúdo 2</TabsContent>
+  <TabsContent value="tab1">Content 1</TabsContent>
+  <TabsContent value="tab2">Content 2</TabsContent>
 </Tabs>
 ```
 
 #### `Card`
-Card com header, content e footer.
+Card with header, content, and footer.
 
 ```tsx
 <Card>
   <CardHeader>
-    <CardTitle>Título</CardTitle>
+    <CardTitle>Title</CardTitle>
   </CardHeader>
-  <CardContent>Conteúdo</CardContent>
-  <CardFooter>Ações</CardFooter>
+  <CardContent>Content</CardContent>
+  <CardFooter>Actions</CardFooter>
 </Card>
 ```
 
 ---
 
-## 📦 Como Usar
+## 📦 How to Use
 
-- Todos os componentes aceitam `className` para customização.
-- Props de acessibilidade e integração com temas.
-- Importação centralizada via `src/components/ui/index.ts`.
-
----
-
-## 💡 Dicas
-
-- Use o componente `ThemeExampleComponent` ou `UIComponentsShowcase` para ver exemplos práticos de todos os temas e componentes.
-- Para criar um novo tema, basta adicionar um novo bloco CSS com `html[data-theme="nome"]` e definir as variáveis.
+- All components accept `className` for customization.
+- Accessibility props and theme integration.
+- Centralized import via `src/components/ui/index.ts`.
 
 ---
 
-**Base React** — Pronto para acelerar o desenvolvimento de qualquer projeto moderno! 🚀
+## 💡 Tips
+
+- Use the `ThemeExampleComponent` or `UIComponentsShowcase` to see practical examples of all themes and components.
+- To create a new theme, just add a new CSS block with `html[data-theme="name"]` and define the variables.
+
+---
+
+**React Base** — Ready to accelerate the development of any modern project! 🚀
