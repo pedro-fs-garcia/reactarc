@@ -1,0 +1,538 @@
+/* === SISTEMA DE TEMAS CSS REFINADO === */
+/* Aplicando teoria das cores, harmonia cromática e princípios de UX/UI */
+
+/* === TEMA LIGHT - Minimalista e Elegante === */
+:root {
+  /* === PALETA PRINCIPAL === */
+  /* Baseada em harmonia monocromática com azul safira e complementares estratégicos */
+  --color-primary: #1e40af;           /* Azul safira profundo */
+  --color-primary-50: #eff6ff;        /* Azul ultra claro */
+  --color-primary-100: #dbeafe;       /* Azul muito claro */
+  --color-primary-200: #bfdbfe;       /* Azul claro */
+  --color-primary-300: #93c5fd;       /* Azul médio claro */
+  --color-primary-400: #60a5fa;       /* Azul médio */
+  --color-primary-500: #3b82f6;       /* Azul base */
+  --color-primary-600: #2563eb;       /* Azul escuro */
+  --color-primary-700: #1d4ed8;       /* Azul muito escuro */
+  --color-primary-800: #1e40af;       /* Azul profundo */
+  --color-primary-900: #1e3a8a;       /* Azul ultra escuro */
+  
+  /* === PALETA SECUNDÁRIA === */
+  /* Tons neutros quentes para equilíbrio */
+  --color-secondary: #6366f1;         /* Índigo complementar */
+  --color-accent: #f59e0b;            /* Âmbar para destaque */
+  --color-accent-warm: #f97316;       /* Laranja para CTAs */
+  
+  /* === BACKGROUNDS === */
+  /* Gradação sutil para profundidade visual */
+  --color-background: #ffffff;
+  --color-background-50: #fafbfc;     /* Quase branco com toque azul */
+  --color-background-100: #f4f6f8;    /* Cinza azulado ultra claro */
+  --color-background-200: #e8ecf0;    /* Cinza azulado claro */
+  --color-background-300: #dde2e8;    /* Cinza azulado médio */
+  --color-card: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-elevated: #ffffff;
+  
+  /* === TEXTOS === */
+  /* Hierarquia visual clara com contraste otimizado */
+  --color-text-primary: #1a202c;      /* Texto principal - contraste 16:1 */
+  --color-text-secondary: #4a5568;    /* Texto secundário - contraste 8:1 */
+  --color-text-tertiary: #718096;     /* Texto terciário - contraste 4.5:1 */
+  --color-text-muted: #a0aec0;        /* Texto desfocado - contraste 3:1 */
+  --color-text-inverse: #ffffff;      /* Texto em backgrounds escuros */
+  --color-text-on-primary: #ffffff;   /* Texto sobre cor primária */
+  
+  /* === BORDAS === */
+  /* Sistema progressivo de bordas */
+  --color-border-subtle: #f1f5f9;     /* Bordas muito sutis */
+  --color-border-light: #e2e8f0;      /* Bordas padrão */
+  --color-border-medium: #cbd5e1;     /* Bordas com presença */
+  --color-border-strong: #94a3b8;     /* Bordas definidas */
+  --color-border-focus: var(--color-primary-500); /* Bordas de foco */
+  
+  /* === ESTADOS SEMÂNTICOS === */
+  /* Cores acessíveis e semanticamente corretas */
+  --color-success: #22c55e;           /* Verde esmeralda */
+  --color-success-bg: #f0fdf4;        /* Background success */
+  --color-warning: #f59e0b;           /* Âmbar */
+  --color-warning-bg: #fffbeb;        /* Background warning */
+  --color-error: #ef4444;             /* Vermelho coral */
+  --color-error-bg: #fef2f2;          /* Background error */
+  --color-info: #3b82f6;              /* Azul informativo */
+  --color-info-bg: #eff6ff;           /* Background info */
+  
+  /* === SOMBRAS REFINADAS === */
+  /* Sistema de elevação baseado em Material Design 3.0 */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.03);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.2);
+  --shadow-colored: 0 8px 25px -8px rgb(30 64 175 / 0.15);
+  
+  /* === VARIÁVEIS DE ESPACAMENTO === */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-2xl: 24px;
+}
+
+/* === TEMA DARK - Sofisticado e Moderno === */
+html[data-theme="dark"] {
+  /* === PALETA PRINCIPAL === */
+  --color-primary: #60a5fa;
+  --color-primary-50: #1e3a8a;
+  --color-primary-100: #1e40af;
+  --color-primary-200: #1d4ed8;
+  --color-primary-300: #2563eb;
+  --color-primary-400: #3b82f6;
+  --color-primary-500: #60a5fa;
+  --color-primary-600: #93c5fd;
+  --color-primary-700: #bfdbfe;
+  --color-primary-800: #dbeafe;
+  --color-primary-900: #eff6ff;
+  
+  /* === PALETA SECUNDÁRIA === */
+  --color-secondary: #a5b4fc;
+  --color-accent: #fbbf24;
+  --color-accent-warm: #fb923c;
+  
+  /* === BACKGROUNDS === */
+  --color-background: #101122;        /* Fundo principal mais escuro */
+  --color-background-50: #18192b;     /* Cinza azulado ultra escuro */
+  --color-background-100: #23243a;    /* Cinza azulado muito escuro */
+  --color-background-200: #2d2e48;    /* Cinza azulado escuro */
+  --color-background-300: #393a56;    /* Cinza azulado médio escuro */
+  --color-card: #18192b;              /* Card mais escuro */
+  --color-surface: #23243a;
+  --color-surface-elevated: #2d2e48;
+  
+  /* === TEXTOS === */
+  --color-text-primary: #f4f8fb;      /* Branco quase puro para contraste máximo */
+  --color-text-secondary: #cbd5e1;    /* Cinza claro */
+  --color-text-tertiary: #94a3b8;     /* Cinza médio */
+  --color-text-muted: #64748b;        /* Cinza azulado */
+  --color-text-inverse: #18192b;      /* Para textos em backgrounds claros */
+  --color-text-on-primary: #ffffff;   /* Sempre branco sobre botões primários */
+  
+  /* === BORDAS === */
+  --color-border-subtle: #23243a;
+  --color-border-light: #2d2e48;
+  --color-border-medium: #3d3d6b;
+  --color-border-strong: #4d4d7b;
+  --color-border-focus: var(--color-primary-500);
+  
+  /* === ESTADOS SEMÂNTICOS === */
+  --color-success: #34d399;
+  --color-success-bg: #064e3b;
+  --color-warning: #fbbf24;
+  --color-warning-bg: #451a03;
+  --color-error: #f87171;
+  --color-error-bg: #7f1d1d;
+  --color-info: #60a5fa;
+  --color-info-bg: #1e3a8a;
+  
+  /* === SOMBRAS === */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.2);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+  --shadow-colored: 0 8px 25px -8px rgb(96 165 250 / 0.3);
+}
+
+/* === TEMA CORPORATE - Elegante e Profissional === */
+html[data-theme="corporate"] {
+  /* === PALETA PRINCIPAL === */
+  /* Baseada em cinza grafite com toques de azul marinho */
+  --color-primary: #1f2937;
+  --color-primary-50: #f9fafb;
+  --color-primary-100: #f3f4f6;
+  --color-primary-200: #e5e7eb;
+  --color-primary-300: #d1d5db;
+  --color-primary-400: #9ca3af;
+  --color-primary-500: #6b7280;
+  --color-primary-600: #4b5563;
+  --color-primary-700: #374151;
+  --color-primary-800: #1f2937;
+  --color-primary-900: #111827;
+  
+  /* === PALETA SECUNDÁRIA === */
+  --color-secondary: #dc2626;          /* Vermelho corporativo */
+  --color-accent: #0891b2;             /* Azul corporativo */
+  --color-accent-warm: #b91c1c;        /* Vermelho para destaque */
+  
+  /* === BACKGROUNDS === */
+  --color-background: #ffffff;
+  --color-background-50: #fafafa;
+  --color-background-100: #f5f5f5;
+  --color-background-200: #eeeeee;
+  --color-background-300: #e0e0e0;
+  --color-card: #ffffff;
+  --color-surface: #fafafa;
+  --color-surface-elevated: #ffffff;
+  
+  /* === TEXTOS === */
+  --color-text-primary: #111827;
+  --color-text-secondary: #374151;
+  --color-text-tertiary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-text-inverse: #ffffff;
+  --color-text-on-primary: #ffffff;
+  
+  /* === BORDAS === */
+  --color-border-subtle: #f3f4f6;
+  --color-border-light: #e5e7eb;
+  --color-border-medium: #d1d5db;
+  --color-border-strong: #9ca3af;
+  --color-border-focus: var(--color-secondary);
+  
+  /* === ESTADOS SEMÂNTICOS === */
+  --color-success: #059669;
+  --color-success-bg: #ecfdf5;
+  --color-warning: #d97706;
+  --color-warning-bg: #fffbeb;
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-info: #0891b2;
+  --color-info-bg: #f0f9ff;
+  
+  /* === SOMBRAS === */
+  --shadow-colored: 0 8px 25px -8px rgb(31 41 55 / 0.15);
+}
+
+/* === TEMA NATURE - Orgânico e Harmonioso === */
+html[data-theme="nature"] {
+  /* === PALETA PRINCIPAL === */
+  /* Inspirada na harmonia da natureza - verde floresta e terra */
+  --color-primary: #16a34a;           /* Verde floresta */
+  --color-primary-50: #f0fdf4;
+  --color-primary-100: #dcfce7;
+  --color-primary-200: #bbf7d0;
+  --color-primary-300: #86efac;
+  --color-primary-400: #4ade80;
+  --color-primary-500: #22c55e;
+  --color-primary-600: #16a34a;
+  --color-primary-700: #15803d;
+  --color-primary-800: #166534;
+  --color-primary-900: #14532d;
+  
+  /* === PALETA SECUNDÁRIA === */
+  --color-secondary: #a3a3a3;          /* Cinza pedra */
+  --color-accent: #f59e0b;             /* Âmbar dourado */
+  --color-accent-warm: #ea580c;        /* Laranja terra */
+  
+  /* === BACKGROUNDS === */
+  --color-background: #fefffe;         /* Branco natural */
+  --color-background-50: #f8fffe;      /* Verde claro quase imperceptível */
+  --color-background-100: #f0fdf4;     /* Verde muito claro */
+  --color-background-200: #dcfce7;     /* Verde claro */
+  --color-background-300: #bbf7d0;     /* Verde suave */
+  --color-card: #ffffff;
+  --color-surface: #f8fffe;
+  --color-surface-elevated: #ffffff;
+  
+  /* === TEXTOS === */
+  --color-text-primary: #14532d;
+  --color-text-secondary: #166534;
+  --color-text-tertiary: #15803d;
+  --color-text-muted: #16a34a;
+  --color-text-inverse: #ffffff;
+  --color-text-on-primary: #ffffff;
+  
+  /* === BORDAS === */
+  --color-border-subtle: #f0fdf4;
+  --color-border-light: #dcfce7;
+  --color-border-medium: #bbf7d0;
+  --color-border-strong: #86efac;
+  --color-border-focus: var(--color-primary-600);
+  
+  /* === ESTADOS SEMÂNTICOS === */
+  --color-success: #22c55e;
+  --color-success-bg: #f0fdf4;
+  --color-warning: #eab308;
+  --color-warning-bg: #fefce8;
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-info: #0ea5e9;
+  --color-info-bg: #f0f9ff;
+  
+  /* === SOMBRAS === */
+  --shadow-colored: 0 8px 25px -8px rgb(22 163 74 / 0.2);
+}
+
+/* === TEMA SUNSET - Caloroso e Energético === */
+html[data-theme="sunset"] {
+  /* === PALETA PRINCIPAL === */
+  /* Inspirada no pôr do sol - laranja, rosa e dourado */
+  --color-primary: #ea580c;           /* Laranja pôr do sol */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #f97316;
+  --color-primary-600: #ea580c;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
+  
+  /* === PALETA SECUNDÁRIA === */
+  --color-secondary: #ec4899;          /* Rosa sunset */
+  --color-accent: #fbbf24;             /* Dourado */
+  --color-accent-warm: #dc2626;        /* Vermelho intenso */
+  
+  /* === BACKGROUNDS === */
+  --color-background: #fffcf5;         /* Creme suave */
+  --color-background-50: #fffaf0;      /* Creme quase branco */
+  --color-background-100: #fff7ed;     /* Creme claro */
+  --color-background-200: #ffedd5;     /* Pêssego claro */
+  --color-background-300: #fed7aa;     /* Pêssego suave */
+  --color-card: #ffffff;
+  --color-surface: #fffaf0;
+  --color-surface-elevated: #ffffff;
+  
+  /* === TEXTOS === */
+  --color-text-primary: #7c2d12;
+  --color-text-secondary: #9a3412;
+  --color-text-tertiary: #c2410c;
+  --color-text-muted: #ea580c;
+  --color-text-inverse: #ffffff;
+  --color-text-on-primary: #ffffff;
+  
+  /* === BORDAS === */
+  --color-border-subtle: #fff7ed;
+  --color-border-light: #ffedd5;
+  --color-border-medium: #fed7aa;
+  --color-border-strong: #fdba74;
+  --color-border-focus: var(--color-primary-600);
+  
+  /* === ESTADOS SEMÂNTICOS === */
+  --color-success: #16a34a;
+  --color-success-bg: #f0fdf4;
+  --color-warning: #f59e0b;
+  --color-warning-bg: #fffbeb;
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-info: #0ea5e9;
+  --color-info-bg: #f0f9ff;
+  
+  /* === SOMBRAS === */
+  --shadow-colored: 0 8px 25px -8px rgb(234 88 12 / 0.25);
+}
+
+/* === CLASSES UTILITÁRIAS COMPLETAS === */
+
+/* === BACKGROUNDS === */
+.bg-background { background-color: var(--color-background) !important; }
+.bg-background-50 { background-color: var(--color-background-50) !important; }
+.bg-background-100 { background-color: var(--color-background-100) !important; }
+.bg-background-200 { background-color: var(--color-background-200) !important; }
+.bg-background-300 { background-color: var(--color-background-300) !important; }
+.bg-card { background-color: var(--color-card) !important; }
+.bg-surface { background-color: var(--color-surface) !important; }
+.bg-surface-elevated { background-color: var(--color-surface-elevated) !important; }
+
+/* Cores Primárias */
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-primary-50 { background-color: var(--color-primary-50) !important; }
+.bg-primary-100 { background-color: var(--color-primary-100) !important; }
+.bg-primary-200 { background-color: var(--color-primary-200) !important; }
+.bg-primary-500 { background-color: var(--color-primary-500) !important; }
+
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.bg-accent { background-color: var(--color-accent) !important; }
+
+/* === TEXTOS === */
+.text-primary { color: var(--color-text-primary) !important; }
+.text-secondary { color: var(--color-text-secondary) !important; }
+.text-tertiary { color: var(--color-text-tertiary) !important; }
+.text-muted { color: var(--color-text-muted) !important; }
+.text-inverse { color: var(--color-text-inverse) !important; }
+.text-on-primary { color: var(--color-text-on-primary) !important; }
+
+/* Cores de texto */
+.text-color-primary { color: var(--color-primary) !important; }
+.text-color-secondary { color: var(--color-secondary) !important; }
+.text-color-accent { color: var(--color-accent) !important; }
+
+/* === BORDAS === */
+.border-subtle { border-color: var(--color-border-subtle) !important; }
+.border-light { border-color: var(--color-border-light) !important; }
+.border-medium { border-color: var(--color-border-medium) !important; }
+.border-strong { border-color: var(--color-border-strong) !important; }
+.border-focus { border-color: var(--color-border-focus) !important; }
+
+.border-color-primary { border-color: var(--color-primary) !important; }
+.border-color-secondary { border-color: var(--color-secondary) !important; }
+
+/* === ESTADOS SEMÂNTICOS === */
+.bg-success { background-color: var(--color-success) !important; }
+.bg-success-light { background-color: var(--color-success-bg) !important; }
+.bg-warning { background-color: var(--color-warning) !important; }
+.bg-warning-light { background-color: var(--color-warning-bg) !important; }
+.bg-error { background-color: var(--color-error) !important; }
+.bg-error-light { background-color: var(--color-error-bg) !important; }
+.bg-info { background-color: var(--color-info) !important; }
+.bg-info-light { background-color: var(--color-info-bg) !important; }
+
+.text-success { color: var(--color-success) !important; }
+.text-warning { color: var(--color-warning) !important; }
+.text-error { color: var(--color-error) !important; }
+.text-info { color: var(--color-info) !important; }
+.text-success-80 { color: var(--color-success); opacity: 0.8; }
+.text-warning-80 { color: var(--color-warning); opacity: 0.8; }
+.text-error-80 { color: var(--color-error); opacity: 0.8; }
+.text-info-80 { color: var(--color-info); opacity: 0.8; }
+
+.border-success { border-color: var(--color-success) !important; }
+.border-warning { border-color: var(--color-warning) !important; }
+.border-error { border-color: var(--color-error) !important; }
+.border-info { border-color: var(--color-info) !important; }
+
+/* === SOMBRAS === */
+.shadow-xs { box-shadow: var(--shadow-xs) !important; }
+.shadow-sm { box-shadow: var(--shadow-sm) !important; }
+.shadow-md { box-shadow: var(--shadow-md) !important; }
+.shadow-lg { box-shadow: var(--shadow-lg) !important; }
+.shadow-xl { box-shadow: var(--shadow-xl) !important; }
+.shadow-2xl { box-shadow: var(--shadow-2xl) !important; }
+.shadow-colored { box-shadow: var(--shadow-colored) !important; }
+
+/* === BORDER RADIUS === */
+.rounded-sm { border-radius: var(--border-radius-sm) !important; }
+.rounded-md { border-radius: var(--border-radius-md) !important; }
+.rounded-lg { border-radius: var(--border-radius-lg) !important; }
+.rounded-xl { border-radius: var(--border-radius-xl) !important; }
+.rounded-2xl { border-radius: var(--border-radius-2xl) !important; }
+
+/* === HOVER STATES === */
+.hover\:bg-primary-500:hover { background-color: var(--color-primary-500) !important; }
+.hover\:bg-primary-600:hover { background-color: var(--color-primary-600) !important; }
+.hover\:bg-primary-700:hover { background-color: var(--color-primary-700) !important; }
+.hover\:border-medium:hover { border-color: var(--color-border-medium) !important; }
+.hover\:border-strong:hover { border-color: var(--color-border-strong) !important; }
+.hover\:shadow-md:hover { box-shadow: var(--shadow-md) !important; }
+.hover\:shadow-lg:hover { box-shadow: var(--shadow-lg) !important; }
+
+/* === FOCUS STATES === */
+.focus\:border-focus:focus { 
+  border-color: var(--color-border-focus) !important; 
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgb(from var(--color-primary-500) r g b / 0.1) !important;
+}
+
+.focus\:ring:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgb(from var(--color-primary-500) r g b / 0.1) !important;
+}
+
+/* === TRANSIÇÕES OTIMIZADAS === */
+.transition-colors {
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-shadow {
+  transition: box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-all {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === TRANSIÇÃO GLOBAL DE TEMA === */
+* {
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === UTILITÁRIOS ESPECIAIS === */
+.theme-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glass effect */
+.glass-effect {
+  background: rgb(from var(--color-background) r g b / 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(from var(--color-border-light) r g b / 0.2);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700));
+}
+
+.bg-gradient-warm {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-warm));
+}
+
+/* === COMPONENTES BASE === */
+.card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-primary:hover {
+  background-color: var(--color-primary-700);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.input-field {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem 1rem;
+  color: var(--color-text-primary);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field:focus {
+  border-color: var(--color-border-focus);
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(from var(--color-primary-500) r g b / 0.1);
+}
+
+.input-base {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-lg);
+  color: var(--color-text-primary);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-base:focus {
+  border-color: var(--color-border-focus);
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(from var(--color-primary-500) r g b / 0.1);
+}
+
+/* === Skeleton Shimmer Animation === */
+@keyframes skeleton-shimmer {
+  100% { transform: translateX(100%); }
+}
