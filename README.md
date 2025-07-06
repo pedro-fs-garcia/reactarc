@@ -1,8 +1,24 @@
-# 🚀 Modern React Boilerplate
+<!-- Logo -->
+<p align="center">
+  <img src="public/reactforge-logo.svg" alt="ReactForge Logo" width="160" height="80" />
+</p>
 
-A robust, scalable React boilerplate ready to accelerate modern project development. Includes a theme system, reusable UI component library, responsiveness, accessibility, and Tailwind CSS integration.
+# ReactForge
+
+A flexible, scalable React boilerplate ready to accelerate. Includes a theme system, basic reusable UI components, responsiveness, accessibility, and Tailwind CSS integration.
 
 ---
+
+## How to use
+
+```bash
+git clone https://github.com/pedro-fs-garcia/reactforge.git
+cd reactforge
+npm install
+npm run dev
+```
+
+Then open http://localhost:5173 in your browser.
 
 ## ✨ Main Features
 
@@ -278,4 +294,4 @@ Card with header, content, and footer.
 
 ---
 
-**React Base** — Ready to accelerate the development of any modern project! 🚀
+**ReactForge** — Building Faster with Pre-built Components
