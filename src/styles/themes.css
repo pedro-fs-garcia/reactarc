@@ -523,3 +523,227 @@ html[data-theme="sunset"] {
 @keyframes skeleton-shimmer {
   100% { transform: translateX(100%); }
 }
+
+/* === Tab Animations === */
+@keyframes fade-in-0 {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out-0 {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slide-in-from-top-2 {
+  from { transform: translateY(-0.5rem); }
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-out-to-top-2 {
+  from { transform: translateY(0); }
+  to { transform: translateY(-0.5rem); }
+}
+
+.animate-in {
+  animation: fade-in-0 0.2s ease-out;
+}
+
+.animate-out {
+  animation: fade-out-0 0.2s ease-in;
+}
+
+.slide-in-from-top-2 {
+  animation: slide-in-from-top-2 0.2s ease-out;
+}
+
+.slide-out-to-top-2 {
+  animation: slide-out-to-top-2 0.2s ease-in;
+}
+
+/* === Data State Classes === */
+[data-state="active"] {
+  /* Active state styles are handled by the component classes */
+}
+
+[data-state="inactive"] {
+  /* Inactive state styles are handled by the component classes */
+}
+
+/* === Tab Specific Styles === */
+[data-state="active"] {
+  color: var(--color-text-on-primary) !important;
+  background-color: var(--color-primary) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+[data-state="active"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: var(--color-text-on-primary);
+}
+
+/* === Tab Trigger Specific Styles === */
+.TabsTrigger[data-state="active"] {
+  color: var(--color-text-on-primary) !important;
+  background-color: var(--color-primary) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.TabsTrigger[data-state="active"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: var(--color-text-on-primary);
+}
+
+/* === Hover States === */
+.TabsTrigger:hover {
+  color: var(--color-primary) !important;
+  background-color: var(--color-primary-50) !important;
+}
+
+.TabsTrigger[data-state="active"]:hover {
+  color: var(--color-text-on-primary) !important;
+  background-color: var(--color-primary) !important;
+}
+
+/* === Alternative Tab Styles === */
+[role="tab"][data-state="active"] {
+  color: var(--color-text-on-primary) !important;
+  background-color: var(--color-primary) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+[role="tab"][data-state="active"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: var(--color-text-on-primary);
+}
+
+/* === CSS Custom Properties for Tabs === */
+.TabsTrigger {
+  --tab-active-bg: var(--color-primary);
+  --tab-active-text: var(--color-text-on-primary);
+  --tab-hover-bg: var(--color-primary-50);
+  --tab-hover-text: var(--color-primary);
+}
+
+/* === High Specificity Tab Styles === */
+button.TabsTrigger[data-state="active"],
+[role="tab"].TabsTrigger[data-state="active"] {
+  color: var(--tab-active-text) !important;
+  background-color: var(--tab-active-bg) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+button.TabsTrigger[data-state="active"]::after,
+[role="tab"].TabsTrigger[data-state="active"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: var(--tab-active-text);
+}
+
+button.TabsTrigger:hover,
+[role="tab"].TabsTrigger:hover {
+  color: var(--tab-hover-text) !important;
+  background-color: var(--tab-hover-bg) !important;
+}
+
+button.TabsTrigger[data-state="active"]:hover,
+[role="tab"].TabsTrigger[data-state="active"]:hover {
+  color: var(--tab-active-text) !important;
+  background-color: var(--tab-active-bg) !important;
+}
+
+/* === Focus Ring Utilities === */
+.focus-visible\:ring-offset-2:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-background), 0 0 0 4px var(--color-border-focus);
+}
+
+/* === TabsContent Specific Styles === */
+[data-radix-tabs-content] {
+  background-color: var(--color-surface) !important;
+}
+
+.TabsContent {
+  background-color: var(--color-surface) !important;
+}
+
+/* === Override any Radix UI background styles === */
+[data-radix-tabs-content],
+[data-radix-tabs-content] * {
+  background-color: var(--color-surface) !important;
+}
+
+/* === Force surface background for tabs content === */
+.TabsContent,
+.TabsContent * {
+  background-color: var(--color-surface) !important;
+}
+
+/* === Override any inline styles from Radix UI === */
+[data-radix-tabs-content][style*="background"] {
+  background-color: var(--color-surface) !important;
+}
+
+/* === Ensure surface background is applied === */
+.bg-surface {
+  background-color: var(--color-surface) !important;
+}
+
+/* === Responsive Utilities === */
+@media (max-width: 640px) {
+  .sm\:inline {
+    display: inline;
+  }
+  
+  .sm\:hidden {
+    display: none;
+  }
+  
+  .sm\:w-auto {
+    width: auto;
+  }
+  
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:inline {
+    display: inline;
+  }
+  
+  .sm\:hidden {
+    display: none;
+  }
+  
+  .sm\:w-auto {
+    width: auto;
+  }
+  
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+}

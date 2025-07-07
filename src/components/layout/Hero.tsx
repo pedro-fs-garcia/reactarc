@@ -1,6 +1,7 @@
 import { ChevronRight, Code, Layers, Palette, Sparkles, Zap } from "lucide-react";
 import { BaseButton } from "../ui/buttons/BaseButton";
 import { globalInfo } from "@/data/globalInfo";
+import ScrollIndicator from "../code/ScrollIndicator";
 
 export default function BaseHero() {
     return (
@@ -33,7 +34,7 @@ export default function BaseHero() {
                 </div>
             </div>
 
-            <div className="py-16 bg-card/50">
+            <div className="bg-card/50">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="text-center p-6">
@@ -62,6 +63,7 @@ export default function BaseHero() {
                     </div>
                 </div>
             </div>
+            <ScrollIndicator/>
         </section>
     )
 }

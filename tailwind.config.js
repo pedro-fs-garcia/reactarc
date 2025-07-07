@@ -47,6 +47,19 @@ module.exports = {
     
     // Utilitários especiais
     'glass-effect', 'bg-gradient-primary', 'bg-gradient-warm',
+    
+    // Classes responsivas para tabs
+    'sm:inline', 'sm:hidden', 'sm:w-auto', 'sm:p-6', 'sm:justify-center',
+    'hidden', 'inline', 'w-full', 'overflow-x-auto', 'justify-start',
+    'min-w-fit', 'whitespace-nowrap', 'flex-shrink-0',
+    'bg-surface', 'bg-surface-elevated',
+    
+    // Classes de animação
+    'animate-in', 'animate-out', 'slide-in-from-top-2', 'slide-out-to-top-2',
+    'fade-in-0', 'fade-out-0',
+    
+    // Classes de estado
+    'data-[state=active]', 'data-[state=inactive]',
   ],
   
   theme: {

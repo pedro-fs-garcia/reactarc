@@ -9,12 +9,12 @@ export default function ScrollIndicator() {
             transition={{ delay: 2 }}
         >
             <motion.div
-                className="w-6 h-10 border-2 border-yellow-400/60 rounded-full flex justify-center cursor-pointer hover:border-yellow-400 transition-colors"
+                className="w-6 h-10 border-2 border-strong rounded-full flex justify-center cursor-pointer hover:border-yellow-400 transition-colors"
                 animate={{ opacity: [1, 0.3, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
             >
                 <motion.div
-                    className="w-1 h-3 bg-yellow-400 rounded-full mt-2"
+                    className="w-1 h-3 bg-primary rounded-full mt-2"
                     animate={{ y: [0, 12, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                 />
