@@ -1,25 +1,9 @@
-import { useEffect, useState } from 'react';
+// ThemeSwitcher.tsx
 import { Sun, Moon } from 'lucide-react';
+import { useTheme } from '@/contexts/theme/ThemeProvider';
 
 export default function ThemeSwitcher() {
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof window !== 'undefined') {
-      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-    }
-    return 'light';
-  });
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
