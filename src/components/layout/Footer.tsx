@@ -6,7 +6,7 @@ import Tooltip from "../ui/Tooltip"
 
 const footerNavigation = [
     { href: "#hero", label: "Home" },
-    { href: "#implementation", label: "Implementations" },
+    { href: "#how-to-use", label: "Get started" },
     { href: "#themes", label: "Themes" },
     { href: "#ui-components", label: "UI Components" },
 ]

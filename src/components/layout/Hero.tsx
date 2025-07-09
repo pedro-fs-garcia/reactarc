@@ -1,11 +1,10 @@
 import { ChevronRight, Code, Layers, Palette, Sparkles, Zap } from "lucide-react";
 import { BaseButton } from "../ui/buttons/BaseButton";
 import { globalInfo } from "@/data/globalInfo";
-import ScrollIndicator from "../code/ScrollIndicator";
 
 export default function BaseHero() {
     return (
-        <section id="hero" className="min-h-screen">
+        <section id="hero" className="">
             <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
                 <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
                 <div className="relative max-w-7xl mx-auto px-6 py-20 text-center">
@@ -27,7 +26,7 @@ export default function BaseHero() {
                         size="lg"
                         leftIcon={<Code size={20} className="mr-2" />}
                         rightIcon={<ChevronRight size={20} className="ml-2" />}
-                        onClick={() => window.open("https://github.com/pedro-fs-garcia/baseReact")}
+                        onClick={() => window.open("https://github.com/pedro-fs-garcia/reactarc", "_blank", "noopener, noreferrer")}
                     >
                         View Documentation
                     </BaseButton>
@@ -63,7 +62,6 @@ export default function BaseHero() {
                     </div>
                 </div>
             </div>
-            <ScrollIndicator/>
         </section>
     )
 }

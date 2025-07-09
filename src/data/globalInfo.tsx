@@ -1,11 +1,11 @@
 import { FaFacebook, FaGlobe, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa"
 
 export const globalInfo = {
-    name: "ReactForge",
-    alternativeName: "ReactForge",
+    name: "ReactArc",
+    alternativeName: "ReactArc",
     slogan: "Building Faster with Pre-built Components",
     description: "A comprehensive React foundation with theme system, UI components, accessibility features and responsive design.",
-    site: "https://github.com/pedro-fs-garcia/reactforge",
+    site: "https://github.com/pedro-fs-garcia/reactarc",
     email: "company e-mail",
     address: {
         city: "city",
@@ -21,7 +21,7 @@ export const globalInfo = {
     linkedin: "https://www.linkedin.com/company/company/",
     whatsapp: "5512999999999",
     phone: "(12) 99999-9999",
-    website: "https://github.com/pedro-fs-garcia/reactforge",
+    website: "https://github.com/pedro-fs-garcia/reactarc",
     maps: "https://www.google.com.br/maps",
     placeId: "google_place_id"
 }

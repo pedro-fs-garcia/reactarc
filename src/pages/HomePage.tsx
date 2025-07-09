@@ -12,22 +12,19 @@ import TabsDemo from "@/components/ui/tabs/TabsDemo";
 import TextsDemo from "@/components/ui/texts/TextsDemo";
 import CopyText from "@/components/ui/texts/CopyText";
 import { BaseButton } from "@/components/ui/buttons/BaseButton";
-import { ArrowRight, ChevronRight } from "lucide-react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export default function HomePage() {
-  const navigate = useNavigate();
-
   return (
     <div className="max-w-6xl mx-auto p-6 space-y-12">
       {/* Header institucional */}
       <Hero></Hero>
       <div className="max-w-7xl mx-auto px-6" id="how-to-use" >
-        <div className="space-y-12 text-center">
-          <h2 className="text-3xl font-bold text-primary mb-4">Start using</h2>
+        <div className="space-y-12 text-center pt-24 flex flex-col items-center justify-center">
+          <h2 className="text-3xl font-bold text-primary mb-12">Start using</h2>
           <div>
-            <p className="text-secondary text-lg">Clone the repository and start building.</p>
-            <CopyText text={"git clone https://github.com/pedro-fs-garcia/reactforge.git your-project"}></CopyText>
+            <p className="text-secondary text-lg mb-4">Clone the repository and start building.</p>
+            <CopyText text={"git clone https://github.com/pedro-fs-garcia/reactarc.git your-project"}></CopyText>
           </div>
           <a href="/practical_examples">
             <BaseButton
