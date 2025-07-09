@@ -8,7 +8,8 @@
 
   <!-- SEO -->
   <title>ReactForge</title>
-  <meta name="description" content="A comprehensive React foundation with theme system, UI components, accessibility features and responsive design.">
+  <meta name="description"
+    content="A comprehensive React foundation with theme system, UI components, accessibility features and responsive design.">
 
   <!-- Favicon e Ícones -->
   <link rel="icon" type="image/svg+xml" href="/reactforge-logo.svg" />
@@ -16,7 +17,8 @@
 
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="ReactForge">
-  <meta property="og:description" content="A comprehensive React foundation with theme system, UI components, accessibility features and responsive design.">
+  <meta property="og:description"
+    content="A comprehensive React foundation with theme system, UI components, accessibility features and responsive design.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://github.com/pedro-fs-garcia/reactforge">
   <meta property="og:image" content="/reactforge-logo.svg">
@@ -46,5 +48,18 @@
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
+
+<script>
+  (function () {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  })();
+</script>
 
 </html>

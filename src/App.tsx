@@ -14,8 +14,8 @@ const navItems = [
 function App() {
 
   return (
-    <BrowserRouter>
-      <ThemeProvider>
+    <ThemeProvider>
+      <BrowserRouter>
         <>
           <Header navItems={navItems} logoUrl={'/reactforge-logo.svg'}></Header>
           <main className="main-container bg-background text-text">
@@ -23,8 +23,8 @@ function App() {
           </main>
           <Footer />
         </>
-      </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
