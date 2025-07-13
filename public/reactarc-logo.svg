@@ -7,5 +7,5 @@
     <ellipse cx="60" cy="60" rx="36" ry="14" transform="rotate(120 60 60)" stroke="#38BDF8" stroke-width="3" fill="none"/>
   </g>
   <circle cx="60" cy="60" r="10" fill="#38BDF8"/>
-  <!-- <text x="60" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#38BDF8" font-weight="bold">ReactForge</text> -->
+  <!-- <text x="60" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#38BDF8" font-weight="bold">ReactArc</text> -->
 </svg>

@@ -4,7 +4,7 @@ export const services = [
   {
     icon: <Zap size={20} className="text-primary" />,
     title: "Faster Development",
-    description: "With ReactForge, you can build modern interfaces faster, reducing project delivery times.",
+    description: "With ReactArc, you can build modern interfaces faster, reducing project delivery times.",
     features: ["Reusable Components", "Optimized Boilerplate", "Fast Builds"],
   },
   {
