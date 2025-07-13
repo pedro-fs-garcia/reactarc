@@ -1,19 +1,19 @@
 <!-- Logo -->
 <p align="center">
-  <img src="public/reactforge-logo.svg" alt="ReactForge Logo" width="160" height="80" />
+  <img src="public/reactarc-logo.svg" alt="ReactArc Logo" width="160" height="80" />
 </p>
 
-# ReactForge
+# ReactArc
 
-A flexible, scalable React boilerplate ready to accelerate. Includes a theme system, basic reusable UI components, responsiveness, accessibility, and Tailwind CSS integration.
+A flexible, scalable React boilerplate ready to accelerate. Includes a theme system, basic reusable UI components, Material UI integration, responsiveness, accessibility, and Tailwind CSS integration.
 
 ---
 
 ## How to use
 
 ```bash
-git clone https://github.com/pedro-fs-garcia/reactforge.git
-cd reactforge
+git clone https://github.com/pedro-fs-garcia/reactarc.git
+cd reactarc
 npm install
 npm run dev
 ```
@@ -24,6 +24,7 @@ Then open http://localhost:5173 in your browser.
 
 - **Theme System**: 5 ready-to-use and easily customizable themes.
 - **UI Components**: Inputs, Dropdown, Modal, Alert, Badge, ProgressBar, Tooltip, Skeleton, Tabs, Card, Buttons, and more.
+- **Material UI Integration**: Seamlessly integrated Material UI components with custom theme support.
 - **Accessibility**: Focus on contrast, keyboard navigation, and ARIA.
 - **Responsiveness**: Mobile-first, adaptable components.
 - **Animations**: Framer Motion integrated for smooth micro-interactions.
@@ -284,6 +285,7 @@ Card with header, content, and footer.
 - All components accept `className` for customization.
 - Accessibility props and theme integration.
 - Centralized import via `src/components/ui/index.ts`.
+- Material UI components automatically adapt to your custom themes.
 
 ---
 
@@ -294,4 +296,4 @@ Card with header, content, and footer.
 
 ---
 
-**ReactForge** — Building Faster with Pre-built Components
+**ReactArc** — Building Faster with Pre-built Components

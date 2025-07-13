@@ -6,6 +6,7 @@ import { globalInfo } from "@/data/globalInfo";
 import Dropdown from "@/components/ui/inputs/Dropdown";
 import { Sun, Moon, Building2, Leaf, Sunset } from "lucide-react";
 import ThemeSwitcher from "@/components/ui/ThemeSwitcher"
+import { useTheme } from "@/contexts/theme/ThemeProvider";
 
 interface NavItem {
   href: string
@@ -20,6 +21,7 @@ type HeaderProps = {
 
 export default function Header({navItems, logoUrl, children}:HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { theme, setTheme } = useTheme();
 
   const themeOptions = [
     { value: "light", label: "Light", icon: <Sun className="text-yellow-400" size={16} /> },
@@ -29,18 +31,8 @@ export default function Header({navItems, logoUrl, children}:HeaderProps) {
     { value: "sunset", label: "Sunset", icon: <Sunset className="text-orange-500" size={16} /> },
   ]
 
-  // Detecta o tema atual do html
-  const getCurrentTheme = () => {
-    if (typeof document !== 'undefined') {
-      return document.documentElement.getAttribute('data-theme') || 'light';
-    }
-    return 'light';
-  }
-  const [theme, setTheme] = useState(getCurrentTheme());
-
   const handleThemeChange = (newTheme: string) => {
-    setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
+    setTheme(newTheme as 'light' | 'dark' | 'corporate' | 'nature' | 'sunset');
   }
 
   return (

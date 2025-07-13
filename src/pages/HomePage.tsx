@@ -13,6 +13,7 @@ import TextsDemo from "@/components/ui/texts/TextsDemo";
 import CopyText from "@/components/ui/texts/CopyText";
 import { BaseButton } from "@/components/ui/buttons/BaseButton";
 import { ArrowRight } from "lucide-react";
+import MaterialUIDemo from "@/components/ui/demos/MaterialUIDemo";
 
 export default function HomePage() {
   return (
@@ -58,6 +59,10 @@ export default function HomePage() {
       <InputDemo></InputDemo>
       <UIDemo></UIDemo>
       <LoadersDemo />
+      
+      {/* Material UI Demo */}
+      <MaterialUIDemo />
+      
       {/* Botão flutuante do WhatsApp */}
       <WhatsappButton />
     </div>
