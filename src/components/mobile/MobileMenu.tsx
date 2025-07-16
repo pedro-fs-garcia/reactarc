@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { globalInfo } from "@/data/globalInfo";
 import MobileMenuButton from "./MobileMenuButton";
-import ThemeSwitcher from "../ui/ThemeSwitcher";
+import ThemeSwitcher from "../ui/themeSwitchers/ThemeSwitcher";
 
 interface NavItem {
     href: string;

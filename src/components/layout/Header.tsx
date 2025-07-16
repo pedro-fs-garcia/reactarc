@@ -1,12 +1,10 @@
-import React, { useState } from "react"
-import { motion } from "framer-motion"
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import MobileMenuButton from "@/components/mobile/MobileMenuButton";
 import MobileMenu from "@/components/mobile/MobileMenu";
 import { globalInfo } from "@/data/globalInfo";
-import Dropdown from "@/components/ui/inputs/Dropdown";
-import { Sun, Moon, Building2, Leaf, Sunset } from "lucide-react";
-import ThemeSwitcher from "@/components/ui/ThemeSwitcher"
-import { useTheme } from "@/contexts/theme/ThemeProvider";
+import ThemeSwitcher from "@/components/ui/themeSwitchers/ThemeSwitcher";
+import ThemeDropdown from "../ui/themeSwitchers/ThemeDropdown";
 
 interface NavItem {
   href: string
@@ -20,20 +18,7 @@ type HeaderProps = {
 }
 
 export default function Header({navItems, logoUrl, children}:HeaderProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme();
-
-  const themeOptions = [
-    { value: "light", label: "Light", icon: <Sun className="text-yellow-400" size={16} /> },
-    { value: "dark", label: "Dark", icon: <Moon className="text-blue-500" size={16} /> },
-    { value: "corporate", label: "Corporate", icon: <Building2 className="text-gray-700" size={16} /> },
-    { value: "nature", label: "Nature", icon: <Leaf className="text-green-600" size={16} /> },
-    { value: "sunset", label: "Sunset", icon: <Sunset className="text-orange-500" size={16} /> },
-  ]
-
-  const handleThemeChange = (newTheme: string) => {
-    setTheme(newTheme as 'light' | 'dark' | 'corporate' | 'nature' | 'sunset');
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
@@ -82,16 +67,8 @@ export default function Header({navItems, logoUrl, children}:HeaderProps) {
               ))}
               {children}
               <ThemeSwitcher/>
-              {/* Theme Dropdown */}
               <div className="ml-4 w-36">
-                <Dropdown
-                  options={themeOptions}
-                  value={theme}
-                  onChange={handleThemeChange}
-                  size="sm"
-                  placeholder="Tema"
-                  label={undefined}
-                />
+                <ThemeDropdown />
               </div>
             </nav>
             <MobileMenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}></MobileMenuButton>
@@ -105,9 +82,7 @@ export default function Header({navItems, logoUrl, children}:HeaderProps) {
         setIsMenuOpen={setIsMenuOpen} 
         navItems={navItems} 
         logoUrl={logoUrl}
-      >
-
-      </MobileMenu>
+      />
     </>
   )
 }

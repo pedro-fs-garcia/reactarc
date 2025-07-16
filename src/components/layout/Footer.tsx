@@ -1,8 +1,8 @@
 import { Mail, MapPin, Phone } from "lucide-react"
 import { globalInfo, socials } from "../../data/globalInfo"
-import { formatAddress } from "@/utils/globalInfoUtils"
+import { formatAddress } from "@/data/globalInfoUtils"
 import { services } from "@/data/services"
-import Tooltip from "../ui/Tooltip"
+import Tooltip from "../ui/Tooltips/Tooltip"
 
 const footerNavigation = [
     { href: "#hero", label: "Home" },

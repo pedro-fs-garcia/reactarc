@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/cards/card";
-import ProgressBar from "../ProgressBar";
-import Tooltip from "../Tooltip";
+import ProgressBar from "../progressBars/ProgressBar";
+import Tooltip from "../Tooltips/Tooltip";
 import BasicLoader from "@/components/loaders/BasicLoader";
 
 export default function UIDemo() {
