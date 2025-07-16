@@ -16,7 +16,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/reactarc">
         <>
           <Header navItems={navItems} logoUrl={'/reactarc-logo.svg'}></Header>
           <main className="main-container bg-background text-text">
