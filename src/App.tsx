@@ -18,7 +18,7 @@ function App() {
     <ThemeProvider>
       <BrowserRouter basename="/reactarc">
         <>
-          <Header navItems={navItems} logoUrl={'/reactarc-logo.svg'}></Header>
+          <Header navItems={navItems} logoUrl={`${import.meta.env.BASE_URL}reactarc-logo.svg`}></Header>
           <main className="main-container bg-background text-text">
             <MainRouter />
           </main>
