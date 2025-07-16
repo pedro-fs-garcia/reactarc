@@ -6,6 +6,7 @@ export default function MainRouter() {
     return (
         <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/reactarc" element={<HomePage />} />
             <Route path="*" element={<NotFoundPage/>} />
         </Routes>
     )
