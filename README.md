@@ -8,9 +8,26 @@
 A flexible, scalable React boilerplate ready to accelerate. Includes a theme system, basic reusable UI components, Material UI integration, responsiveness, accessibility, and Tailwind CSS integration.
 
 ---
+## 💡 Demo
+A demonstration of this boilerplate is available at:
+https://pedro-fs-garcia.github.io/reactarc
+
+> A configuração de deploy está isolada na branch `deploy`.
+> A `main` está limpa para uso como ponto de partida de novos projetos.
+
 
 ## How to use
+You can use ReactArc in two ways
 
+### 1. Button "Use this template" on GitHub
+Go to: https://github.com/pedro-fs-garcia/reactarc
+
+Click the green `Use this template` button at the top of the page.
+
+Choose a name for your new repository and click Create repository. This will create a new project, with ReactArc as the base, without any commit history.
+
+
+### 2. Clone the repository directly
 ```bash
 git clone https://github.com/pedro-fs-garcia/reactarc.git
 cd reactarc
